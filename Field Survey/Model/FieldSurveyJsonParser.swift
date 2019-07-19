@@ -2,8 +2,8 @@
 //  FieldSurveyJsonParser.swift
 //  Field Survey
 //
-//  Created by Patrick Rottman on 11/15/18.
-//  Copyright © 2018 Patrick Rottman. All rights reserved.
+//  Created by Guangzu on 7/19/19.
+//  Copyright © 2019 Guangzu. All rights reserved.
 //
 
 import Foundation
@@ -14,7 +14,7 @@ class FieldSurveyJsonParser{
     
     class func parse(_ data: Data) -> [FieldSurvey] {
         var fieldSurveys = [FieldSurvey]()
-        dateFormatter.dateFormat = "YYYY-MM-dd HH:mm"
+        dateFormatter.dateFormat = "YYYY-MM-DD'T'HH:mm:ss'Z'"
         
         if let json = try? JSONSerialization.jsonObject(with: data, options: []),
             let root = json as? [String: Any],

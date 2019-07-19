@@ -2,8 +2,8 @@
 //  FieldSurveyViewController.swift
 //  Field Survey
 //
-//  Created by Patrick Rottman on 11/15/18.
-//  Copyright © 2018 Patrick Rottman. All rights reserved.
+//  Created by Guangzu on 7/19/19.
+//  Copyright © 2019 Guangzu. All rights reserved.
 //
 
 import UIKit
@@ -22,6 +22,8 @@ class FieldSurveyViewController: UIViewController, UITableViewDelegate, UITableV
         
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium
+        
+        self.title = " Field Survey"
         // Do any additional setup after loading the view.
     }
     

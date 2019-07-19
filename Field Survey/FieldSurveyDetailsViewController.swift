@@ -2,8 +2,8 @@
 //  FieldSurveyDetailsViewController.swift
 //  Field Survey
 //
-//  Created by Patrick Rottman on 11/15/18.
-//  Copyright © 2018 Patrick Rottman. All rights reserved.
+//  Created by Guangzu on 7/19/19.
+//  Copyright © 2019 Guangzu. All rights reserved.
 //
 
 import UIKit
@@ -31,6 +31,8 @@ class FieldSurveyDetailsViewController: UIViewController {
         
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium
+        
+        self.title = "Observation"
         
         iconImage.image = fieldSurvey?.classification.image
         titleLabel.text = fieldSurvey?.title
